@@ -1,0 +1,420 @@
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&family=Roboto+Slab&display=swap');
+
+/* common style utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*-----------------------------
+  upper-container/header design
+  ------------------------------*/
+.upper-container {
+    background-color: black;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.hl-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.half-width h1 {
+    margin-top: 8px;
+    font-size: 2em;
+    color: white;
+}
+
+.half-width p {
+    margin-bottom: 40px;
+    color: white;
+}
+
+/*------------------------- 
+upper section animation part
+-------------------------- */
+.goal-post {
+    margin-top: 20px;
+    width: 160px;
+    height: 135px;
+}
+
+.messi img {
+    margin-top: 30px;
+    height: 450px;
+}
+
+.leg {
+    transition: transform 1s ease-in;
+}
+
+.ball {
+    display: none;
+    height: 55px;
+    width: 55px;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 630px;
+    bottom: 180px;
+    margin-bottom: 10px;
+    transition: transform 1s ease-out 1.1s;
+}
+
+.upper-container:hover .leg {
+    transform: rotate(10deg);
+    transform-origin: right left;
+}
+
+.upper-container:hover .ball {
+    transform: translate(-470px, -220px);
+}
+
+/*------------------------------
+  upper-section link-button desig
+  -------------------------------- */
+.link-button {
+    text-decoration: none;
+    background-color: #DD0000;
+    padding: 10px 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+}
+
+/*-------------------------
+  container or middle-section
+  --------------------------- */
+.middle-section {
+    border-radius: 5px;
+    margin-top: 90px;
+}
+
+.vertical-nav {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.vertical-nav .first {
+    color: lawngreen;
+    background-color: rosybrown;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.vertical-nav .current {
+    background-color: red;
+}
+
+.vertical-nav .current2 {
+    background-color: red;
+}
+
+/* ----------------------------------------------------------
+Image-grid section design for both index.html and update.html
+------------------------------------------------------------- */
+.img-grid {
+    display: grid;
+    grid-gap: 1em;
+    margin-bottom: 50px;
+}
+
+.img-card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1)
+}
+
+.img-card-body {
+    padding: 20px;
+}
+
+.img-card img {
+    width: 100%;
+}
+
+.update-img-grid {
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.update-img1 {
+    background-color: white;
+    height: 240px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+}
+
+.flag-vs {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-ball {
+    height: 30px;
+    width: 30px;
+    padding-top: 12px;
+    border-radius: 10px;
+
+}
+
+.update-img1 h3 {
+    color: black;
+    text-align: center;
+}
+
+.update-img1 img {
+    margin-top: 50px;
+    
+    margin-right: 25px;
+}
+
+.update-img1 p {
+    color: black;
+    text-align: center;
+}
+
+.img-card p {}
+
+.img-card .Tf-btn {
+    text-decoration: none;
+    border: 1px solid black;
+    background-image: linear-gradient(white, white);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.icon-add {}
+
+.fa-clock {
+    margin-right: 25px;
+}
+
+.fa-chevron-right {
+    margin-left: 15px;
+}
+
+#time {
+    margin-left: 5px;
+}
+
+#cmnt {
+    margin-left: 7px;
+}
+
+/*--------------------
+footer section design 
+----------------------*/
+footer {
+    background-color: black;
+    margin-top: 60px;
+}
+
+.footer-goal {
+    margin-top: 38px;
+}
+
+.footer-goal h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+    padding-top: 100px;
+}
+
+hr {
+    width: 80%;
+}
+
+.footer-text {
+    position: relative;
+}
+
+.footer-list {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    padding: 0 20px;
+}
+
+.footer-list li {
+    text-align: center;
+    margin: 15px;
+    list-style: none;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+.social-icon {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.social-icon a:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-whatsapp,
+.fa-linkedin,
+.fa-twitter-square {
+    padding: 12px;
+    color: lightsalmon;
+}
+
+.footer-list li a:hover {
+    background-color: aqua;
+    color: crimson;
+    border-radius: 5px;
+}
+
+.show-all {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .vertical-nav .first {
+        margin: 0;
+    }
+
+    .vertical-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .vertical-nav ul li a {
+        width: 160px;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .show-all {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .show-all a {
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+    }
+
+    .footer-list {
+        position: relative;
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .update-img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .img-info-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hl-body {
+        text-align: left;
+        margin-left: 70px;
+    }
+
+    .middle-section {
+        display: flex;
+    }
+
+    .ball {
+        display: block;
+    }
+
+    .messi img {
+        margin-top: 0;
+        margin-left: 70px;
+    }
+
+    .vertical-nav {
+        width: 200px;
+        height: 100%;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social-icon {
+        text-align: right;
+        margin-top: 40px;
+        margin-right: 50px;
+        font-size: 28px;
+    }
+
+    .hl-body {
+        margin-left: 70px;
+    }
+
+    .footer-list {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .update-img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
